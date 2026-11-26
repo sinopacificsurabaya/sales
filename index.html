@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="id"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sino Pacific — Sales Portal</title>
+<title>Sinopacific Surabaya — Sales Portal</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
 <style>
 :root{--red:#C8102E;--red-d:#A50D26;--red-t:#FCE8EB;--ink:#12161B;--bg:#F2F4F7;--card:#FFF;--tx:#14181D;--mu:#667085;--bd:#E4E7EC;--bd2:#D0D5DD;--ok:#067647;--okb:#DCFAE6;--wn:#93370D;--wnb:#FEF0C7;--f:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;color-scheme:light}
@@ -89,12 +89,12 @@ input.amt{text-align:right;font-variant-numeric:tabular-nums}
 @media(max-width:600px){.item .r3{grid-template-columns:70px minmax(0,1fr)}.home{grid-template-columns:minmax(0,1fr)}.rrow{grid-template-columns:minmax(0,1fr) minmax(0,1fr) auto}.rrow [data-k=ket]{grid-column:1/-1;grid-row:1}.rhead{display:none!important}.wrap{padding:12px 12px 50px}.fg,.fg3,.item{grid-template-columns:minmax(0,1fr)}nav{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}nav a{text-align:center;padding:6px 2px;font-size:12px}header{position:static}.rrow{border-bottom:1px solid var(--bd);padding-bottom:10px}}
 </style></head><body>
 <header><div class="hd">
- <a class="logo" href="#beranda"><i>SP</i><div>Sino Pacific<small>Sales Portal</small></div></a>
+ <a class="logo" href="#beranda"><i>SP</i><div>Sinopacific Surabaya<small>Sales Portal</small></div></a>
  <nav id="nav"><a href="#beranda">Beranda</a><a href="#katalog">Katalog</a><a href="#quotation">Quotation</a><a href="#leasing">Simulasi Leasing</a><a href="#inhouse">Simulasi Inhouse</a><a href="#reimburse">Reimburse</a></nav>
 </div></header>
 <div class="wrap">
 <section id="s-beranda">
- <div class="hero"><img id="b_logo" alt="Sino Pacific"><h1>Sales Portal</h1><p>PT Sinopacific Peralatan Indonusa · Pilih menu</p></div>
+ <div class="hero"><img id="b_logo" alt="Sinopacific Surabaya"><h1>Sales Portal</h1><p>PT Sinopacific Peralatan Indonusa · Pilih menu</p></div>
  <div class="home">
  <a class="menu" href="#katalog"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg><div><b>Katalog</b><span>Daftar unit, harga, spesifikasi, dan brosur</span></div></a>
  <a class="menu" href="#quotation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg><div><b>Quotation</b><span>Buat penawaran, submit ke spreadsheet, unduh</span></div></a>
@@ -663,7 +663,7 @@ function suratQuotation(q,ref,sales){
  if(sales&&sales.ttd&&sales.ttdUkur){const[w0,h0]=sales.ttdUkur,k=Math.min(90/w0,52/h0);d.img(sales.ttd,56.7,s+24.2+(52-h0*k)/2,w0*k,h0*k)}
  d.img(ASET.stempel,62.3,s+47.7,97.8,102);
  d.img(ASET.dealer,263,s+25.1,297,167);
- d.text('Sino Pacific, your strong partner of China’s heavy equipment.',56.8,s+20.7);
+ d.text('Sinopacific, your strong partner of China’s heavy equipment.',56.8,s+20.7);
  d.text('Thank you for your trust!',56.8,s+42.5);
  d.text('Sincerely,',56.8,s+91.6);
  [['Name',sales?(sales.lengkap||sales.nama):'',107.9],['Email',sales&&sales.email,124.3],['HP',sales&&sales.hp,141.1]].forEach(([k,t,o])=>{
