@@ -1020,7 +1020,7 @@ function dokReimburse(o){
  });
  y+=80;
  /* Kotak-kotak foto nota di bawah list */
- const n=2,gap=10,w=(R-L-gap)/n,penuh=340;
+ const n=3,gap=10,w=(R-L-gap)/n,penuh=340;
  let i=0;
  while(i<o.foto.length){
   let h=penuh;
@@ -1121,8 +1121,8 @@ function excelReimburse(o){
  for(let i=0;i<3;i++)tinggi(r+i,19.5);r+=3;
  sel('B'+r,o.checked,13);rentang('C','E',r,r,o.approved,13);sel('H'+r,o.nama,13);r+=2;
  /* Foto nota: 2 kotak per baris (kolom B–E dan G–H) */
- const kotak=[['B','E'],['G','H']];
- const TB=20,PTB=15; /* jumlah baris per kotak, tinggi baris (pt) */
+ const kotak=[['B','C'],['D','F'],['G','H']];
+ const TB=15,PTB=15; /* jumlah baris per kotak, tinggi baris (pt) */
  const HAL=780; /* tinggi isi satu halaman A4 (pt) */
  let terpakai=0;
  for(let n=1;n<r;n++){const t=baris.get(n)&&baris.get(n).t||15;terpakai=terpakai+t>HAL?t:terpakai+t}
